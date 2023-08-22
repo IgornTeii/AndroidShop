@@ -1,0 +1,103 @@
+:root {
+    --color-primary: black;
+    --color-secundary: green;
+    --color-asset: darkgreen;
+    --color-asset2: green;
+    --bg-primary: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-primary);
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu .logo {
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu ul li a {
+    color: var(--color-primary);
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: green;
+    border-bottom: 1px solid green; /* Removi a borda arredondada */
+}
+
+section h1 {
+    text-align: center;
+    margin-top: 180px;
+    font-size: 50px
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 3rem;
+    margin-top: 8rem; 
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 2rem; 
+    padding: 1rem; 
+    background-color: var(--color-secundary); 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 2rem;
+}
+
+.content img {
+    max-width: 100%;
+    width: 9rem;
+    margin-bottom: 1vh;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+}
+
+.content span {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.content p {
+    margin-bottom: 0.5rem;
+}
+
+.content a {
+    color: var(--color-asset2);
+    margin-bottom: 0.5rem;
+}

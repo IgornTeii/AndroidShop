@@ -1,0 +1,54 @@
+:root {
+    --color-primary: black;
+    --color-secundary: green;
+    --color-asset: darkgreen;
+    --color-asset2: green;
+    --bg-primary: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--bg-primary);
+    z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu .logo {
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu ul li a {
+    color: var(--color-primary);
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: green;
+    border-bottom: 1px solid green; /* Removi a borda arredondada */
+}
