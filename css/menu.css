@@ -50,7 +50,7 @@ header {
 
 .menu ul li a:hover {
     color: green;
-    border-bottom: 1px solid green; /* Removi a borda arredondada */
+    border-bottom: 1px solid green; 
 }
 
 .container {
@@ -60,9 +60,9 @@ header {
 }
 
 main {
-    height: auto; /* Ajustei para auto para que se ajuste ao conteúdo */
+    height: auto; 
     margin-top: 4rem;
-    padding-top: 60px; /* Espaço para o header fixo */
+    padding-top: 60px; 
 }
 
 .title {

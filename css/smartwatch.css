@@ -1,8 +1,8 @@
 :root {
     --color-primary: black;
     --color-secundary: green;
-    --color-asset: darkgreen;
-    --color-asset2: green;
+    --color-asset: rgb(255, 255, 255);
+    --color-asset2: rgb(0, 45, 128);
     --bg-primary: #fff;
 }
 
@@ -55,10 +55,9 @@ header {
 
 section h1 {
     text-align: center;
-    margin-top: 110px;
-    font-size: 50px
+    margin-top: 150px;
+    font-size: 50px;
 }
-
 
 .container {
     display: flex;
@@ -66,22 +65,22 @@ section h1 {
     justify-content: center;
     padding: 20px 20px;
     gap: 3rem;
-    margin-top: 8rem; 
+    margin-top: 2rem;
 }
 
 .content {
     text-align: center;
-    margin-bottom: 2rem; 
-    padding: 2rem; 
-    background-color: var(--color-secundary); 
-    border-radius: 10px; 
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--color-secundary);
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    line-height: 2rem;
+    line-height: 3rem;
 }
 
 .content img {
     max-width: 100%;
-    width: 9rem;
+    width: 12rem;
     margin-bottom: 1vh;
 }
 
@@ -101,4 +100,34 @@ section h1 {
 .content a {
     color: var(--color-asset2);
     margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #f0f0f0;
+}
+
+footer:before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px; /* Espaço entre a linha e o rodapé */
+}
+
+.footer {
+    text-align: center;
+    margin: auto; /* Margem de cima para baixo, auto horizontalmente */
+    padding: 20px; /* Adicione algum espaço interno se necessário */
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    .content {
+        width: 90%;
+    }
 }

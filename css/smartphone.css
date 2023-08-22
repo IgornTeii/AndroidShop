@@ -1,8 +1,8 @@
 :root {
     --color-primary: black;
     --color-secundary: green;
-    --color-asset: darkgreen;
-    --color-asset2: green;
+    --color-asset: rgb(255, 255, 255);
+    --color-asset2: rgb(0, 45, 128);
     --bg-primary: #fff;
 }
 
@@ -50,13 +50,13 @@ header {
 
 .menu ul li a:hover {
     color: green;
-    border-bottom: 1px solid green; /* Removi a borda arredondada */
+    border-bottom: 1px solid green;
 }
 
 section h1 {
     text-align: center;
-    margin-top: 180px;
-    font-size: 50px
+    margin-top: 150px;
+    font-size: 50px;
 }
 
 .container {
@@ -65,23 +65,25 @@ section h1 {
     justify-content: center;
     padding: 20px 20px;
     gap: 3rem;
-    margin-top: 8rem; 
+    margin-top: 2rem;
 }
 
 .content {
+    width: 300px; /* Exemplo de largura */
     text-align: center;
-    margin-bottom: 2rem; 
-    padding: 1rem; 
-    background-color: var(--color-secundary); 
-    border-radius: 10px; 
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--color-secundary);
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     line-height: 2rem;
 }
 
 .content img {
     max-width: 100%;
-    width: 9rem;
-    margin-bottom: 1vh;
+    width: 200px; /* Exemplo de largura */
+    height: 200px; /* Exemplo de altura */
+    margin-bottom: 2vh;
 }
 
 .content h3 {
