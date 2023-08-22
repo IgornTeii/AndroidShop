@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="menu">
             <a href="menu.html"><img src="./img/unnamed.png" alt="Android Logo" class="logo"></a>
+            <button class="menu-toggle">&#9776;</button> <!-- Botão para o menu de hambúrguer -->
             <ul>
                 <li><a href="./smartphone.html">Smartphone</a></li>
                 <li><a href="./tablet.html">Tablet</a></li>
@@ -24,8 +27,9 @@
     <main>
         <div class="container">
             <div class="title">
-            <h1>Damos as boas-vindas à<br>
-                <span>Android Store</span></h1>
+                <h1>Damos as boas-vindas à<br>
+                    <span>Android Store</span>
+                </h1>
             </div>
         </div>
         <div class="main-img">
@@ -40,6 +44,20 @@
             <a href="smartphone.html" class="link">Saiba Mais</a>
             <a href="smartphone.html" class="link">Comprar</a>
         </div>
+        <footer>
+            <div class="footer">
+                <p> &copy; 2023 Android Inc. Todos os direitos reservados. Android Computer Brasil Ltda.</p>
+                <p>Contato: contato@androidbrasil.com</p>
+                <p>Outras formas de comprar: ligue para 0800-761-0867. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000.
+                    Os Serviços de Mídia da Android são fornecidos pela Android Services LATAM LLC.</p>
+            </div>
+        </footer>
     </main>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu ul').classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>

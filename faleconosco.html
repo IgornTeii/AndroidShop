@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav class="menu">
             <a href="menu.html"><img src="./img/unnamed.png" alt="Android Logo" class="logo"></a>
+            <button class="menu-toggle">&#9776;</button> <!-- Botão para o menu de hambúrguer -->
             <ul>
                 <li><a href="./smartphone.html">Smartphone</a></li>
                 <li><a href="./tablet.html">Tablet</a></li>
@@ -24,18 +27,32 @@
     <section>
         <div class="container">
             <div class="content">
-              <h3>Meu suporte</h3>
-              <p>Obtenha informações atualizadas sobre produtos Apple, incluindo cobertura, reparos e muito mais.</p>
-              <a href="#">Saiba Mais ></a>
+                <h3>Meu suporte</h3>
+                <p>Obtenha informações atualizadas sobre produtos Apple, incluindo cobertura, reparos e muito mais.</p>
+                <a href="#">Saiba Mais ></a>
             </div>
         </div>
         <div class="container-text">
             <div class="content-text">
-              <h3>Tome cuidado com peças falsificadas</h3>
-              <p>É possível que adaptadores de alimentação e baterias de terceiros ou falsificadas não tenham sido desenvolvidos adequadamente, e seu uso pode resultar em problemas de segurança. Para garantir que você receba uma bateria legítima da Apple durante substituição da bateria, recomendamos que você compareça a uma Apple Store ou um Centro de Serviço Autorizado Apple (AASP). Se você precisar de um adaptador de substituição para carregar um dispositivo Apple, recomendamos obter um adaptador de alimentação da Apple.
-                Além disso, telas de substituição que não sejam da Apple podem comprometer a qualidade visual e não funcionar corretamente. Os reparos de tela certificados pela Apple são feitos por especialistas de confiança que usam peças originais da Apple.</p>
+                <h3>Tome cuidado com peças falsificadas</h3>
+                <p>É possível que adaptadores de alimentação e baterias de terceiros ou falsificadas não tenham sido desenvolvidos adequadamente, e seu uso pode resultar em problemas de segurança. Para garantir que você receba uma bateria legítima da Apple durante substituição da bateria, recomendamos que você compareça a uma Apple Store ou um Centro de Serviço Autorizado Apple (AASP). Se você precisar de um adaptador de substituição para carregar um dispositivo Apple, recomendamos obter um adaptador de alimentação da Apple.
+                    Além disso, telas de substituição que não sejam da Apple podem comprometer a qualidade visual e não funcionar corretamente. Os reparos de tela certificados pela Apple são feitos por especialistas de confiança que usam peças originais da Apple.</p>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="footer">
+            <p> &copy; 2023 Android Inc. Todos os direitos reservados. Android Computer Brasil Ltda.</p>
+            <p>Contato: contato@androidbrasil.com</p>
+            <p>Outras formas de comprar: ligue para 0800-761-0867. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000.
+                Os Serviços de Mídia da Android são fornecidos pela Android Services LATAM LLC.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu ul').classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>

@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Android Shop</title>
-    <link rel="stylesheet" href="./css/tablet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Android Shop</title>
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav class="menu">
-            <a href="menu.html"><img src="./img/unnamed.png" alt="Android Logo" class="logo"></a>
-            <ul>
-                <li><a href="./smartphone.html">Smartphone</a></li>
-                <li><a href="./tablet.html">Tablet</a></li>
-                <li><a href="./smartwatch.html">Smartwatch</a></li>
-                <li><a href="./faleconosco.html">Fale conosco</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>Quais são os AirPods ideais para você?</h1>
-          <div class="container">
-            <div class="content">
-              <img src="./img/s7_plus-removebg-preview.png" alt="AirPods" />
-              <h3>S7 plus</h3>
-              <span>2ª geração</span>
-              <p>A partir de R$ 1.399</p>
-              <a href="#">Comprar</a>
-            </div>
-            <div class="content">
-              <img src="./img/s8ultra-removebg-preview.png" alt="AirPods" />
-              <h3>S8 ultra</h3>
-              <span>3ª geração</span>
-              <p>A partir de R$ 1.899</p>
-              <a href="#">Comprar</a>
-            </div>
-            <div class="content">
-              <img src="./img/taba-removebg-preview.png" alt="AirPods Pro" />
-              <h3>Taba</h3>
-              <span>2ª geração</span>
-              <p>A partir de R$ 2.599</p>
-              <a href="#">Comprar</a>
-            </div>
-            <div class="content">
-              <img src="./img/lenovo-removebg-preview.png" alt="AirPods Max" />
-              <h3>Lenovo</h3>
-              <span>1ª geração</span>
-              <p>A partir de R$ 6.590</p>
-              <a href="#">Comprar</a>
-            </div>
-          </div>
-    </section>
+  <header>
+    <nav class="menu">
+      <a href="menu.html"><img src="./img/unnamed.png" alt="Android Logo" class="logo"></a>
+      <button class="menu-toggle">&#9776;</button> <!-- Botão para o menu de hambúrguer -->
+      <ul>
+        <li><a href="./smartphone.html">Smartphone</a></li>
+        <li><a href="./tablet.html">Tablet</a></li>
+        <li><a href="./smartwatch.html">Smartwatch</a></li>
+        <li><a href="./faleconosco.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1>Quais são os AirPods ideais para você?</h1>
+    <div class="container">
+      <div class="content">
+        <img src="./img/s7_plus-removebg-preview.png" alt="AirPods" />
+        <h3>S7 plus</h3>
+        <span>2ª geração</span>
+        <p>A partir de R$ 1.399</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="content">
+        <img src="./img/s8ultra-removebg-preview.png" alt="AirPods" />
+        <h3>S8 ultra</h3>
+        <span>3ª geração</span>
+        <p>A partir de R$ 1.899</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="content">
+        <img src="./img/taba-removebg-preview.png" alt="AirPods Pro" />
+        <h3>Taba</h3>
+        <span>2ª geração</span>
+        <p>A partir de R$ 2.599</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="content">
+        <img src="./img/lenovo-removebg-preview.png" alt="AirPods Max" />
+        <h3>Lenovo</h3>
+        <span>1ª geração</span>
+        <p>A partir de R$ 6.590</p>
+        <a href="#">Comprar</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <p> &copy; 2023 Android Inc. Todos os direitos reservados. Android Computer Brasil Ltda.</p>
+      <p>Contato: contato@androidbrasil.com</p>
+      <p>Outras formas de comprar: ligue para 0800-761-0867. Rua Leopoldo Couto de Magalhães Jr., 700, 7º andar, Itaim Bibi. São Paulo, SP. CEP: 04542-000.
+        Os Serviços de Mídia da Android são fornecidos pela Android Services LATAM LLC.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.menu ul').classList.toggle('active');
+    });
+  </script>
 </body>
+
 </html>
